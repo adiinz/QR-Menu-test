@@ -1,43 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Menu</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Smith Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      border-left: 5px solid #ffbf00;
+      padding-left: 0.7rem;
+      margin: 2.5rem 0 1rem;
+      color: #ffbf00;
+    }
+
+    .menu-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .item {
+      background-color: #1e1e1e;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      border: 1px solid #2e2e2e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .item:hover {
+      background-color: #2c2c2c;
+      transform: translateY(-2px);
+    }
+
+    .item::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .item span {
+      float: right;
+      font-weight: bold;
+      color: #ffbf00;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .item {
+        padding: 0.8rem 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Mr. Smith</h1>
-    </header>
-    <main>
-        <section class="menu">
-            <h2>Topli napici</h2>
-            <div class="menu-item">
-                <h3>Espresso</h3>
-                <span>2 KM</span>
-            </div>
-            <div class="menu-item">
-                <h3>Americano</h3>
-                <span>2.5 KM</span>
-            </div>
-            <div class="menu-item">
-                <h3>Latte Macchiato</h3>
-                <span>2.5 KM</span>
-            </div>
-        </section>
-		<section class="menu">
-            <h2>Sendvici</h2>
-            <div class="menu-item">
-                <h3>Pileci Sendvic</h3>
-                <span>10 KM</span>
-            </div>
-            <div class="menu-item">
-                <h3>Vegy Sendvic</h3>
-                <span>9 KM</span>
-            </div>
-            </div>
-        </section>
-    </main>
+  <header>
+    <img src="logo.png" alt="Mr.Smith Logo">
+    <h1>Mr. Smith Menu</h1>
+  </header>
+  <div class="container">
+    <h2>Topli Napici</h2>
+    <div class="menu-section">
+      <div class="item" onclick="addItem('Espresso', 2)">Espresso <span>2.00 KM</span></div>
+      <div class="item" onclick="addItem('Mali macchiato', 2.5)">Mali macchiato <span>2.50 KM</span></div>
+      <div class="item" onclick="addItem('Veliki macchiato', 3)">Veliki macchiato <span>3.00 KM</span></div>
+      <div class="item" onclick="addItem('Cappuccino', 4)">Cappuccino <span>4.00 KM</span></div>
+      <div class="item" onclick="addItem('Kafa sa šlagom', 3)">Kafa sa šlagom <span>3.00 KM</span></div>
+      <div class="item" onclick="addItem('Late macchiato', 4)">Late macchiato <span>4.00 KM</span></div>
+      <div class="item" onclick="addItem('Nes 3u1', 3.5)">Nes 3u1 <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Nes Vanilija', 3.5)">Nes Vanilija <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Nes Čokolada', 3.5)">Nes Čokolada <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Nes Lješnjak', 3.5)">Nes Lješnjak <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Nes Kokos', 3.5)">Nes Kokos <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Ice coffee', 3)">Ice coffee <span>3.00 KM</span></div>
+      <div class="item" onclick="addItem('Topla čokolada', 4)">Topla čokolada <span>4.00 KM</span></div>
+      <div class="item" onclick="addItem('Americano', 4)">Americano <span>4.00 KM</span></div>
+      <div class="item" onclick="addItem('Čaj', 2.5)">Čaj <span>2.50 KM</span></div>
+      <div class="item" onclick="addItem('Happy kafa', 1.5)">Happy kafa <span>1.50 KM</span></div>
+      <div class="item" onclick="addItem('Happy čaj', 1.5)">Happy čaj <span>1.50 KM</span></div>
+    </div>
+
+    <h2>Mineralna Voda</h2>
+    <div class="menu-section">
+      <div class="item">Kisela voda (0.25l) <span>2.50 KM</span></div>
+      <div class="item">Exotic (0.25l) <span>2.50 KM</span></div>
+      <div class="item">Prirodna voda (0.25l) <span>2.00 KM</span></div>
+      <div class="item">Voda limun (0.25l) <span>2.50 KM</span></div>
+    </div>
+
+    <h2>Bezalkoholna Pića</h2>
+    <div class="menu-section">
+      <div class="item">Orangina (Regular, Rouge) (0.25l) <span>4.00 KM</span></div>
+      <div class="item">Limona (Original, Mint, Bitter Lemon) (0.25l) <span>3.50 KM</span></div>
+      <div class="item">Jupi (Tangerina, Orange) (0.25l) <span>3.00 KM</span></div>
+      <div class="item">Spezi (0.25l) <span>3.50 KM</span></div>
+      <div class="item">Juicy Vita (15g) <span>2.50 KM</span></div>
+      <div class="item">Coca-Cola (Original, Zero) (0.25l) <span>3.50 KM</span></div>
+      <div class="item">Schweppes (Bitter Lemon, Tonic, Tangerina) (0.25l) <span>3.50 KM</span></div>
+      <div class="item">Fanta (0.25l) <span>3.50 KM</span></div>
+      <div class="item">Sprite (0.25l) <span>3.50 KM</span></div>
+      <div class="item">Cockta (0.25l) <span>2.50 KM</span></div>
+	</div>
+	  
+    <h2>Prirodni Sokovi</h2>
+    <div class="menu-section">
+	  <div class="item">Juicy Narandža (0.20l) <span>3.50 KM</span></div>
+	  <div class="item">Juicy Jagoda (0.20l) <span>3.50 KM</span></div>
+	  <div class="item">Juicy Višnja (0.20l) <span>3.50 KM</span></div>
+	  <div class="item">Juicy Breskva (0.20l) <span>3.50 KM</span></div>
+	  <div class="item">Juicy Ananas (0.20l) <span>3.50 KM</span></div>
+	  <div class="item">Juicy Jabuka (0.20l) <span>3.50 KM</span></div>
+	  <div class="item">Juicy Ribizla (0.20l) <span>3.50 KM</span></div>
+	  <div class="item">Ledeni čaj brusnica (0.25l) <span>3.50 KM</span></div>
+	  <div class="item">Ledeni čaj breskva (0.25l) <span>3.50 KM</span></div>
+	  <div class="item">Cijeđena narandža (0.30l) <span>4.00 KM</span></div>
+	  <div class="item">Limunada (0.30l) <span>3.50 KM</span></div>
+	  <div class="item">Cijeđeni mix (0.30l) <span>4.00 KM</span></div>
+	</div>
+	  	  
+    <h2>Energetski Napici</h2>
+    <div class="menu-section">
+	  <div class="item">Red Bull (0.25l) <span>5.00 KM</span></div>
+	  <div class="item">Rooster/Richard (0.25l) <span>5.00 KM</span></div>
+	</div>
+	
+	<h2>Shisha</h2>
+    <div class="menu-section">
+	  <div class="item">Adalaya (14g)<span>7.00 KM</span></div>
+	  <div class="item">Al Fakher (14g)<span>7.00 KM</span></div>
+	  <div class="item">Argelini (14g)<span>7.00 KM</span></div>
+	</div>
+	
+    <h2>Cocktails</h2>
+    <div class="menu-section">
+	  <div class="item">Bahama Mama (0.40l) <span>9.00 KM</span></div>
+	  <div class="item">Cuba Libre (0.4l) <span>8.00 KM</span></div>
+	  <div class="item">Blue Lagoon (0.4l) <span>8.00 KM</span></div>
+	  <div class="item">Tequila Sunrise (0.4l) <span>8.00 KM</span></div>
+	  <div class="item">Long Island (0.4l) <span>10.00 KM</span></div>
+	  <div class="item">Mojito (0.4l) <span>8.00 KM</span></div>
+	  <div class="item">Sex On The Beach (0.4l) <span>8.00 KM</span></div>
+	  <div class="item">Shots (0.03l) <span>5.00 KM</span></div>
+	  <div class="item">Bezalkoholni kokteli (0.4l) <span>6.00 KM</span></div>
+	</div>
+	 
+    <h2>Alkoholna Pića</h2>
+    <div class="menu-section">
+	  <div class="item">Johnnie Walker Red Label (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Johnnie Walker Black Label (0.03l) <span>6.00 KM</span></div>
+	  <div class="item">Vodka Smirnoff (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Vodka Ciroc (0.03l) <span>8.00 KM</span></div>
+	  <div class="item">Gin Gordon's (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Gin Gordon's Pink (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Gin Tanqueray (0.03l) <span>5.50 KM</span></div>
+	  <div class="item">Bailey's (0.03l) <span>5.00 KM</span></div>
+	  <div class="item">Tequila La Quincha (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Malibu (0.03l) <span>4.50 KM</span></div>
+	  <div class="item">Martini Bianco (0.03l) <span>5.00 KM</span></div>
+	  <div class="item">Pelinkovac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Vlahovac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Ballentines (0.03l) <span>5.00 KM</span></div>
+	  <div class="item">Jack Daniels (0.03l) <span>5.00 KM</span></div>
+	  <div class="item">Hennesy (0.03l) <span>8.00 KM</span></div>
+	  <div class="item">Remy martin (0.03l) <span>8.00 KM</span></div>
+	  <div class="item">Jägermeister (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Rum Bacardi (0.03l) <span>4.50 KM</span></div>
+	  <div class="item">Rum Captain Morgan (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Campari (0.03l) <span>5.00 KM</span></div>
+	  <div class="item">Stock (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Chivas Regal (0.03l) <span>6.00 KM</span></div>
+	  <div class="item">Kuhano vino (0.20l) <span>6.00 KM</span></div>
+	</div>
+	
+    <h2>Likeri i Rakije</h2>
+    <div class="menu-section">
+	  <div class="item">Višnjevac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Medica Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Orahovac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Viljamovka (0.03l) <span>4.00 KM</span></div>
+	  <div class="item">Jabuka (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Šljiva (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Dunja (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Kajsija (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Travarica (0.03l) <span>3.00 KM</span></div>
+	  <div class="item">Loza (0.03l) <span>3.00 KM</span></div>
+	</div>
+	
+    <h2>Pivo</h2>
+    <div class="menu-section">
+	  <div class="item">Heineken (0.33l) <span>5.00 KM</span></div>
+	  <div class="item">Heineken Silver (0.33l) <span>5.00 KM</span></div>
+	  <div class="item">Heineken 0% alc. (0.33l) <span>5.00 KM</span></div>
+	  <div class="item">Karlovačko (0.33l) <span>4.00 KM</span></div>
+	  <div class="item">Karlovačko tamno (0.50l) <span>4.00 KM</span></div>
+	  <div class="item">Karlovačko Radler (0.33l) <span>4.00 KM</span></div>
+	  <div class="item">Karlovačko točeno (0.33l) <span>3.00 KM</span></div>
+	  <div class="item">Karlovačko točeno (0.50l) <span>4.00 KM</span></div>
+	  <div class="item">Laško (0.33l) <span>4.00 KM</span></div>
+	  <div class="item">Laško Malt (0.33l) <span>4.00 KM</span></div>
+	  <div class="item">Krušovice (0.50l) <span>4.00 KM</span></div>
+	  <div class="item">Union (0.33l) <span>4.00 KM</span></div>
+	  <div class="item">Sol (0.33l) <span>6.00 KM</span></div>
+	  <div class="item">Lagunitas (0.35l) <span65.00 KM</span></div>
+	  <div class="item">Sarajevsko premium (0.33l) <span>4.50 KM</span></div>
+	  <div class="item">Sarajevsko premium (0.50l) <span>7.00 KM</span></div>
+	  <div class="item">Corona (0.33l) <span>6.00 KM</span></div>
+	</div>
+	
+    <h2>Cider</h2>
+    <div class="menu-section">
+	  <div class="item">Somersby (0.33l) <span>5.00 KM</span></div>
+	</div>
+	
+    <h2>Vina</h2>
+    <div class="menu-section">
+	  <div class="item">Cabarnet Franc (0.75l) <span>35.00 KM</span></div>
+	  <div class="item">Merlot (0.75l) <span>45.00 KM</span></div>
+	  <div class="item">Merlot (0.187l) <span>6.00 KM</span></div>
+	  <div class="item">Pinot sivi (0.75l) <span>35.00 KM</span></div>
+	  <div class="item">Plava (0.75l) <span>50.00 KM</span></div>
+	  <div class="item">Soave (0.187l) <span>6.00 KM</span></div>
+	  <div class="item" onclick="addOrRemoveItem('Bambus', 6)">Bambus (0.4l) <span>6.00 KM</span></div>
+	</div>
+	
+    <h2>Champagnes</h2>
+    <div class="menu-section">
+	  <div class="item" onclick="addItem('Chandon', 99)">Cristal  (0.75l) <span>99.00 KM</span></div>
+	  <div class="item" onclick="addItem('Moët&Chandon', 259)">Moët&Chandon <span>259.00 KM</span></div>
+    </div>
+  </div>
+  
+  
+	<!-- Bill Display -->
+  <div id="billDisplay" class="fixed bottom-4 right-4 bg-yellow-100 dark:bg-yellow-300 text-black px-4 py-3 rounded-xl shadow-lg max-w-sm w-full">
+    <h4 class="font-bold mb-2">Your Order</h4>
+    <ul id="itemList" class="text-sm mb-2 space-y-1"></ul>
+    <div class="font-semibold text-lg">Total: <span id="billTotal">0</span><span> KM</span></div>
+  </div>
+
+<script>
+    let bill = JSON.parse(localStorage.getItem("guestBill")) || {};
+
+    // Render menu
+    const menuDiv = document.getElementById("menuItems");
+    items.forEach(item => {
+      const div = document.createElement("div");
+      div.className = "p-4 bg-white dark:bg-gray-800 rounded-lg shadow cursor-pointer";
+      div.innerHTML = `<h3 class="text-lg font-semibold">${item.name}</h3><p class="text-sm text-gray-500">${item.price} KM</p>`;
+      div.onclick = () => addItem(item.name, item.price);
+      menuDiv.appendChild(div);
+    });
+
+    function updateDisplay() {
+      const itemList = document.getElementById("itemList");
+      const billTotal = document.getElementById("billTotal");
+
+      itemList.innerHTML = '';
+      let total = 0;
+
+      for (let item in bill) {
+        const qty = bill[item].quantity;
+        const price = bill[item].price;
+        const subtotal = qty * price;
+        total += subtotal;
+
+        const li = document.createElement("li");
+        li.className = "cursor-pointer hover:line-through";
+        li.textContent = `${item} x${qty} – ${subtotal} KM`;
+        li.onclick = () => removeItem(item);
+        itemList.appendChild(li);
+      }
+
+      billTotal.textContent = total;
+      localStorage.setItem("guestBill", JSON.stringify(bill));
+    }
+
+    function addItem(name, price) {
+      if (bill[name]) {
+        bill[name].quantity++;
+      } else {
+        bill[name] = { price: price, quantity: 1 };
+      }
+      updateDisplay();
+    }
+
+    function removeItem(name) {
+      if (bill[name]) {
+        bill[name].quantity--;
+        if (bill[name].quantity <= 0) {
+          delete bill[name];
+        }
+      }
+      updateDisplay();
+    }
+
+    updateDisplay();
+  </script>
+
 </body>
 </html>
