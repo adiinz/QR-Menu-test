@@ -25,7 +25,8 @@
 
     header img {
       max-width: 100px;
-      margin-bottom: 1rem;
+      margin: 0 auto;
+	  display: block;
     }
 
     header h1 {
@@ -120,161 +121,161 @@
 
     <h2>Mineralna Voda</h2>
     <div class="menu-section">
-      <div class="item">Kisela voda (0.25l) <span>2.50 KM</span></div>
-      <div class="item">Exotic (0.25l) <span>2.50 KM</span></div>
-      <div class="item">Prirodna voda (0.25l) <span>2.00 KM</span></div>
-      <div class="item">Voda limun (0.25l) <span>2.50 KM</span></div>
+      <div class="item" onclick="addItem('Kisela voda (0.25l)', 2.5)">Kisela voda (0.25l) <span>2.50 KM</span></div>
+      <div class="item" onclick="addItem('Exotic (0.25l)', 2.5)">Exotic (0.25l) <span>2.50 KM</span></div>
+      <div class="item" onclick="addItem('Prirodna voda (0.25l)', 2)">Prirodna voda (0.25l) <span>2.00 KM</span></div>
+      <div class="item" onclick="addItem('Voda limun (0.25l)', 2.5)">Voda limun (0.25l) <span>2.50 KM</span></div>
     </div>
 
     <h2>Bezalkoholna Pića</h2>
     <div class="menu-section">
-      <div class="item">Orangina (Regular, Rouge) (0.25l) <span>4.00 KM</span></div>
-      <div class="item">Limona (Original, Mint, Bitter Lemon) (0.25l) <span>3.50 KM</span></div>
-      <div class="item">Jupi (Tangerina, Orange) (0.25l) <span>3.00 KM</span></div>
-      <div class="item">Spezi (0.25l) <span>3.50 KM</span></div>
-      <div class="item">Juicy Vita (15g) <span>2.50 KM</span></div>
-      <div class="item">Coca-Cola (Original, Zero) (0.25l) <span>3.50 KM</span></div>
-      <div class="item">Schweppes (Bitter Lemon, Tonic, Tangerina) (0.25l) <span>3.50 KM</span></div>
-      <div class="item">Fanta (0.25l) <span>3.50 KM</span></div>
-      <div class="item">Sprite (0.25l) <span>3.50 KM</span></div>
-      <div class="item">Cockta (0.25l) <span>2.50 KM</span></div>
-	</div>
+      <div class="item" onclick="addItem('Orangina (Regular, Rouge) (0.25l)', 4)">Orangina (Regular, Rouge) (0.25l) <span>4.00 KM</span></div>
+      <div class="item" onclick="addItem('Limona (Original, Mint, Bitter Lemon) (0.25l)', 3.5)">Limona (Original, Mint, Bitter Lemon) (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Jupi (Tangerina, Orange) (0.25l)', 3)">Jupi (Tangerina, Orange) (0.25l) <span>3.00 KM</span></div>
+      <div class="item" onclick="addItem('Spezi (0.25l)', 3.5)">Spezi (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Juicy Vita (15g)', 2.5)">Juicy Vita (15g) <span>2.50 KM</span></div>
+      <div class="item" onclick="addItem('Coca-Cola (Original, Zero) (0.25l)', 3.5)">Coca-Cola (Original, Zero) (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Schweppes (Bitter Lemon, Tonic, Tangerina) (0.25l)', 3.5)">Schweppes (Bitter Lemon, Tonic, Tangerina) (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Fanta (0.25l)', 3.5)">Fanta (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Sprite (0.25l)', 3.5)">Sprite (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Cockta (0.25l)', 2.5)">Cockta (0.25l) <span>2.50 KM</span></div>
+    </div>
 	  
     <h2>Prirodni Sokovi</h2>
     <div class="menu-section">
-	  <div class="item">Juicy Narandža (0.20l) <span>3.50 KM</span></div>
-	  <div class="item">Juicy Jagoda (0.20l) <span>3.50 KM</span></div>
-	  <div class="item">Juicy Višnja (0.20l) <span>3.50 KM</span></div>
-	  <div class="item">Juicy Breskva (0.20l) <span>3.50 KM</span></div>
-	  <div class="item">Juicy Ananas (0.20l) <span>3.50 KM</span></div>
-	  <div class="item">Juicy Jabuka (0.20l) <span>3.50 KM</span></div>
-	  <div class="item">Juicy Ribizla (0.20l) <span>3.50 KM</span></div>
-	  <div class="item">Ledeni čaj brusnica (0.25l) <span>3.50 KM</span></div>
-	  <div class="item">Ledeni čaj breskva (0.25l) <span>3.50 KM</span></div>
-	  <div class="item">Cijeđena narandža (0.30l) <span>4.00 KM</span></div>
-	  <div class="item">Limunada (0.30l) <span>3.50 KM</span></div>
-	  <div class="item">Cijeđeni mix (0.30l) <span>4.00 KM</span></div>
-	</div>
-	  	  
+      <div class="item" onclick="addItem('Juicy Narandža (0.20l)', 3.5)">Juicy Narandža (0.20l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Juicy Jagoda (0.20l)', 3.5)">Juicy Jagoda (0.20l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Juicy Višnja (0.20l)', 3.5)">Juicy Višnja (0.20l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Juicy Breskva (0.20l)', 3.5)">Juicy Breskva (0.20l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Juicy Ananas (0.20l)', 3.5)">Juicy Ananas (0.20l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Juicy Jabuka (0.20l)', 3.5)">Juicy Jabuka (0.20l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Juicy Ribizla (0.20l)', 3.5)">Juicy Ribizla (0.20l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Ledeni čaj brusnica (0.25l)', 3.5)">Ledeni čaj brusnica (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Ledeni čaj breskva (0.25l)', 3.5)">Ledeni čaj breskva (0.25l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Cijeđena narandža (0.30l)', 4)">Cijeđena narandža (0.30l) <span>4.00 KM</span></div>
+      <div class="item" onclick="addItem('Limunada (0.30l)', 3.5)">Limunada (0.30l) <span>3.50 KM</span></div>
+      <div class="item" onclick="addItem('Cijeđeni mix (0.30l)', 4)">Cijeđeni mix (0.30l) <span>4.00 KM</span></div>
+    </div>
+	
     <h2>Energetski Napici</h2>
     <div class="menu-section">
-	  <div class="item">Red Bull (0.25l) <span>5.00 KM</span></div>
-	  <div class="item">Rooster/Richard (0.25l) <span>5.00 KM</span></div>
-	</div>
+      <div class="item" onclick="addItem('Red Bull (0.25l)', 5)">Red Bull (0.25l) <span>5.00 KM</span></div>
+      <div class="item" onclick="addItem('Rooster/Richard (0.25l)', 5)">Rooster/Richard (0.25l) <span>5.00 KM</span></div>
+    </div>
 	
-	<h2>Shisha</h2>
+    <h2>Shisha</h2>
     <div class="menu-section">
-	  <div class="item">Adalaya (14g)<span>7.00 KM</span></div>
-	  <div class="item">Al Fakher (14g)<span>7.00 KM</span></div>
-	  <div class="item">Argelini (14g)<span>7.00 KM</span></div>
-	</div>
+      <div class="item" onclick="addItem('Adalaya (14g)', 7)">Adalaya (14g)<span>7.00 KM</span></div>
+      <div class="item" onclick="addItem('Al Fakher (14g)', 7)">Al Fakher (14g)<span>7.00 KM</span></div>
+      <div class="item" onclick="addItem('Argelini (14g)', 7)">Argelini (14g)<span>7.00 KM</span></div>
+    </div>
 	
     <h2>Cocktails</h2>
     <div class="menu-section">
-	  <div class="item">Bahama Mama (0.40l) <span>9.00 KM</span></div>
-	  <div class="item">Cuba Libre (0.4l) <span>8.00 KM</span></div>
-	  <div class="item">Blue Lagoon (0.4l) <span>8.00 KM</span></div>
-	  <div class="item">Tequila Sunrise (0.4l) <span>8.00 KM</span></div>
-	  <div class="item">Long Island (0.4l) <span>10.00 KM</span></div>
-	  <div class="item">Mojito (0.4l) <span>8.00 KM</span></div>
-	  <div class="item">Sex On The Beach (0.4l) <span>8.00 KM</span></div>
-	  <div class="item">Shots (0.03l) <span>5.00 KM</span></div>
-	  <div class="item">Bezalkoholni kokteli (0.4l) <span>6.00 KM</span></div>
+      <div class="item" onclick="addItem('Bahama Mama (0.40l)', 9)">Bahama Mama (0.40l) <span>9.00 KM</span></div>
+      <div class="item" onclick="addItem('Cuba Libre (0.4l)', 8)">Cuba Libre (0.4l) <span>8.00 KM</span></div>
+      <div class="item" onclick="addItem('Blue Lagoon (0.4l)', 8)">Blue Lagoon (0.4l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Blue Lagoon (0.4l)', 8)">Blue Lagoon (0.4l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Tequila Sunrise (0.4l)', 8)">Tequila Sunrise (0.4l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Long Island (0.4l)', 10)">Long Island (0.4l) <span>10.00 KM</span></div>
+	  <div class="item" onclick="addItem('Mojito (0.4l)', 8)">Mojito (0.4l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Sex On The Beach (0.4l)', 8)">Sex On The Beach (0.4l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Shots (0.03l)', 5)">Shots (0.03l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Bezalkoholni kokteli (0.4l)', 6)">Bezalkoholni kokteli (0.4l) <span>6.00 KM</span></div>
+
+	<h2>Alkoholna Pića</h2>
+	<div class="menu-section">
+	  <div class="item" onclick="addItem('Johnnie Walker Red Label (0.03l)', 4)">Johnnie Walker Red Label (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Johnnie Walker Black Label (0.03l)', 6)">Johnnie Walker Black Label (0.03l) <span>6.00 KM</span></div>
+	  <div class="item" onclick="addItem('Vodka Smirnoff (0.03l)', 4)">Vodka Smirnoff (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Vodka Ciroc (0.03l)', 8)">Vodka Ciroc (0.03l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Gin Gordon\'s (0.03l)', 4)">Gin Gordon's (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Gin Gordon\'s Pink (0.03l)', 4)">Gin Gordon's Pink (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Gin Tanqueray (0.03l)', 5.5)">Gin Tanqueray (0.03l) <span>5.50 KM</span></div>
+	  <div class="item" onclick="addItem('Bailey\'s (0.03l)', 5)">Bailey's (0.03l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Tequila La Quincha (0.03l)', 4)">Tequila La Quincha (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Malibu (0.03l)', 4.5)">Malibu (0.03l) <span>4.50 KM</span></div>
+	  <div class="item" onclick="addItem('Martini Bianco (0.03l)', 5)">Martini Bianco (0.03l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Pelinkovac Maraska (0.03l)', 3)">Pelinkovac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Vlahovac Maraska (0.03l)', 3)">Vlahovac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Ballentines (0.03l)', 5)">Ballentines (0.03l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Jack Daniels (0.03l)', 5)">Jack Daniels (0.03l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Hennesy (0.03l)', 8)">Hennesy (0.03l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Remy martin (0.03l)', 8)">Remy martin (0.03l) <span>8.00 KM</span></div>
+	  <div class="item" onclick="addItem('Jägermeister (0.03l)', 4)">Jägermeister (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Rum Bacardi (0.03l)', 4.5)">Rum Bacardi (0.03l) <span>4.50 KM</span></div>
+	  <div class="item" onclick="addItem('Rum Captain Morgan (0.03l)', 4)">Rum Captain Morgan (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Campari (0.03l)', 5)">Campari (0.03l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Stock (0.03l)', 4)">Stock (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Chivas Regal (0.03l)', 6)">Chivas Regal (0.03l) <span>6.00 KM</span></div>
+	  <div class="item" onclick="addItem('Kuhano vino (0.20l)', 6)">Kuhano vino (0.20l) <span>6.00 KM</span></div>
 	</div>
-	 
-    <h2>Alkoholna Pića</h2>
-    <div class="menu-section">
-	  <div class="item">Johnnie Walker Red Label (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Johnnie Walker Black Label (0.03l) <span>6.00 KM</span></div>
-	  <div class="item">Vodka Smirnoff (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Vodka Ciroc (0.03l) <span>8.00 KM</span></div>
-	  <div class="item">Gin Gordon's (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Gin Gordon's Pink (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Gin Tanqueray (0.03l) <span>5.50 KM</span></div>
-	  <div class="item">Bailey's (0.03l) <span>5.00 KM</span></div>
-	  <div class="item">Tequila La Quincha (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Malibu (0.03l) <span>4.50 KM</span></div>
-	  <div class="item">Martini Bianco (0.03l) <span>5.00 KM</span></div>
-	  <div class="item">Pelinkovac Maraska (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Vlahovac Maraska (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Ballentines (0.03l) <span>5.00 KM</span></div>
-	  <div class="item">Jack Daniels (0.03l) <span>5.00 KM</span></div>
-	  <div class="item">Hennesy (0.03l) <span>8.00 KM</span></div>
-	  <div class="item">Remy martin (0.03l) <span>8.00 KM</span></div>
-	  <div class="item">Jägermeister (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Rum Bacardi (0.03l) <span>4.50 KM</span></div>
-	  <div class="item">Rum Captain Morgan (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Campari (0.03l) <span>5.00 KM</span></div>
-	  <div class="item">Stock (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Chivas Regal (0.03l) <span>6.00 KM</span></div>
-	  <div class="item">Kuhano vino (0.20l) <span>6.00 KM</span></div>
+
+	<h2>Likeri i Rakije</h2>
+	<div class="menu-section">
+	  <div class="item" onclick="addItem('Višnjevac Maraska (0.03l)', 3)">Višnjevac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Medica Maraska (0.03l)', 3)">Medica Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Orahovac Maraska (0.03l)', 3)">Orahovac Maraska (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Viljamovka (0.03l)', 4)">Viljamovka (0.03l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Jabuka (0.03l)', 3)">Jabuka (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Šljiva (0.03l)', 3)">Šljiva (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Dunja (0.03l)', 3)">Dunja (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Kajsija (0.03l)', 3)">Kajsija (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Travarica (0.03l)', 3)">Travarica (0.03l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Loza (0.03l)', 3)">Loza (0.03l) <span>3.00 KM</span></div>
 	</div>
-	
-    <h2>Likeri i Rakije</h2>
-    <div class="menu-section">
-	  <div class="item">Višnjevac Maraska (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Medica Maraska (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Orahovac Maraska (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Viljamovka (0.03l) <span>4.00 KM</span></div>
-	  <div class="item">Jabuka (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Šljiva (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Dunja (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Kajsija (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Travarica (0.03l) <span>3.00 KM</span></div>
-	  <div class="item">Loza (0.03l) <span>3.00 KM</span></div>
+
+	<h2>Pivo</h2>
+	<div class="menu-section">
+	  <div class="item" onclick="addItem('Heineken (0.33l)', 5)">Heineken (0.33l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Heineken Silver (0.33l)', 5)">Heineken Silver (0.33l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Heineken 0% alc. (0.33l)', 5)">Heineken 0% alc. (0.33l) <span>5.00 KM</span></div>
+	  <div class="item" onclick="addItem('Karlovačko (0.33l)', 4)">Karlovačko (0.33l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Karlovačko tamno (0.50l)', 4)">Karlovačko tamno (0.50l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Karlovačko Radler (0.33l)', 4)">Karlovačko Radler (0.33l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Karlovačko točeno (0.33l)', 3)">Karlovačko točeno (0.33l) <span>3.00 KM</span></div>
+	  <div class="item" onclick="addItem('Karlovačko točeno (0.50l)', 4)">Karlovačko točeno (0.50l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Laško (0.33l)', 4)">Laško (0.33l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Laško Malt (0.33l)', 4)">Laško Malt (0.33l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Krušovice (0.50l)', 4)">Krušovice (0.50l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Union (0.33l)', 4)">Union (0.33l) <span>4.00 KM</span></div>
+	  <div class="item" onclick="addItem('Sol (0.33l)', 6)">Sol (0.33l) <span>6.00 KM</span></div>
+	  <div class="item" onclick="addItem('Lagunitas (0.35l)', 65)">Lagunitas (0.35l) <span>65.00 KM</span></div>
+	  <div class="item" onclick="addItem('Sarajevsko premium (0.33l)', 4.5)">Sarajevsko premium (0.33l) <span>4.50 KM</span></div>
+	  <div class="item" onclick="addItem('Sarajevsko premium (0.50l)', 7)">Sarajevsko premium (0.50l) <span>7.00 KM</span></div>
+	  <div class="item" onclick="addItem('Corona (0.33l)', 6)">Corona (0.33l) <span>6.00 KM</span></div>
 	</div>
-	
-    <h2>Pivo</h2>
-    <div class="menu-section">
-	  <div class="item">Heineken (0.33l) <span>5.00 KM</span></div>
-	  <div class="item">Heineken Silver (0.33l) <span>5.00 KM</span></div>
-	  <div class="item">Heineken 0% alc. (0.33l) <span>5.00 KM</span></div>
-	  <div class="item">Karlovačko (0.33l) <span>4.00 KM</span></div>
-	  <div class="item">Karlovačko tamno (0.50l) <span>4.00 KM</span></div>
-	  <div class="item">Karlovačko Radler (0.33l) <span>4.00 KM</span></div>
-	  <div class="item">Karlovačko točeno (0.33l) <span>3.00 KM</span></div>
-	  <div class="item">Karlovačko točeno (0.50l) <span>4.00 KM</span></div>
-	  <div class="item">Laško (0.33l) <span>4.00 KM</span></div>
-	  <div class="item">Laško Malt (0.33l) <span>4.00 KM</span></div>
-	  <div class="item">Krušovice (0.50l) <span>4.00 KM</span></div>
-	  <div class="item">Union (0.33l) <span>4.00 KM</span></div>
-	  <div class="item">Sol (0.33l) <span>6.00 KM</span></div>
-	  <div class="item">Lagunitas (0.35l) <span65.00 KM</span></div>
-	  <div class="item">Sarajevsko premium (0.33l) <span>4.50 KM</span></div>
-	  <div class="item">Sarajevsko premium (0.50l) <span>7.00 KM</span></div>
-	  <div class="item">Corona (0.33l) <span>6.00 KM</span></div>
+
+	<h2>Cider</h2>
+	<div class="menu-section">
+	  <div class="item" onclick="addItem('Somersby (0.33l)', 5)">Somersby (0.33l) <span>5.00 KM</span></div>
 	</div>
-	
-    <h2>Cider</h2>
-    <div class="menu-section">
-	  <div class="item">Somersby (0.33l) <span>5.00 KM</span></div>
+
+	<h2>Vina</h2>
+	<div class="menu-section">
+	  <div class="item" onclick="addItem('Cabarnet Franc (0.75l)', 35)">Cabarnet Franc (0.75l) <span>35.00 KM</span></div>
+	  <div class="item" onclick="addItem('Merlot (0.75l)', 45)">Merlot (0.75l) <span>45.00 KM</span></div>
+	  <div class="item" onclick="addItem('Merlot (0.187l)', 6)">Merlot (0.187l) <span>6.00 KM</span></div>
+	  <div class="item" onclick="addItem('Pinot sivi (0.75l)', 35)">Pinot sivi (0.75l) <span>35.00 KM</span></div>
+	  <div class="item" onclick="addItem('Plava (0.75l)', 50)">Plava (0.75l) <span>50.00 KM</span></div>
+	  <div class="item" onclick="addItem('Soave (0.187l)', 6)">Soave (0.187l) <span>6.00 KM</span></div>
+	  <div class="item" onclick="addItem('Bambus (0.4l)', 6)">Bambus (0.4l) <span>6.00 KM</span></div>
 	</div>
-	
-    <h2>Vina</h2>
-    <div class="menu-section">
-	  <div class="item">Cabarnet Franc (0.75l) <span>35.00 KM</span></div>
-	  <div class="item">Merlot (0.75l) <span>45.00 KM</span></div>
-	  <div class="item">Merlot (0.187l) <span>6.00 KM</span></div>
-	  <div class="item">Pinot sivi (0.75l) <span>35.00 KM</span></div>
-	  <div class="item">Plava (0.75l) <span>50.00 KM</span></div>
-	  <div class="item">Soave (0.187l) <span>6.00 KM</span></div>
-	  <div class="item" onclick="addOrRemoveItem('Bambus', 6)">Bambus (0.4l) <span>6.00 KM</span></div>
-	</div>
-	
-    <h2>Champagnes</h2>
-    <div class="menu-section">
-	  <div class="item" onclick="addItem('Chandon', 99)">Cristal  (0.75l) <span>99.00 KM</span></div>
+
+	<h2>Champagnes</h2>
+	<div class="menu-section">
+	  <div class="item" onclick="addItem('Cristal (0.75l)', 99)">Cristal  (0.75l) <span>99.00 KM</span></div>
 	  <div class="item" onclick="addItem('Moët&Chandon', 259)">Moët&Chandon <span>259.00 KM</span></div>
-    </div>
-  </div>
+	</div>
+      
   
   
 	<!-- Bill Display -->
-  <div id="billDisplay" class="fixed bottom-4 right-4 bg-yellow-100 dark:bg-yellow-300 text-black px-4 py-3 rounded-xl shadow-lg max-w-sm w-full">
-    <h4 class="font-bold mb-2">Vaš Račun:</h4>
-    <ul id="itemList" class="text-sm mb-2 space-y-1"></ul>
-    <div class="font-semibold text-lg">Total: <span id="billTotal">0</span><span> KM</span></div>
-  </div>
+	<div id="billDisplay" class="fixed bottom-4 right-4 bg-yellow-100 dark:bg-yellow-300 text-black px-4 py-3 rounded-xl shadow-lg max-w-sm w-full">
+      <h4 class="font-bold mb-2">Vaš Račun:</h4>
+      <ul id="itemList" class="text-sm mb-2 space-y-1"></ul>
+      <div class="font-semibold text-lg">Total: <span id="billTotal">0</span><span> KM</span></div>
+	</div>
 
 <script>
     let bill = JSON.parse(localStorage.getItem("guestBill")) || {};
